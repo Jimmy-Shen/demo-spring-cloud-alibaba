@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.service.dao.mapper.GpsInfoMapper">
+    <resultMap type="com.demo.service.dao.entity.GpsInfo" id="GpsInfoMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="mobile" column="mobile" jdbcType="VARCHAR"/>
+        <result property="carNum" column="car_num" jdbcType="VARCHAR"/>
+        <result property="addr" column="addr" jdbcType="VARCHAR"/>
+        <result property="x" column="x" jdbcType="VARCHAR"/>
+        <result property="y" column="y" jdbcType="VARCHAR"/>
+        <result property="gX" column="g_x" jdbcType="VARCHAR"/>
+        <result property="gY" column="g_y" jdbcType="VARCHAR"/>
+        <result property="sX" column="s_x" jdbcType="VARCHAR"/>
+        <result property="sY" column="s_y" jdbcType="VARCHAR"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="city" column="city" jdbcType="VARCHAR"/>
+        <result property="carId" column="car_id" jdbcType="INTEGER"/>
+        <result property="orderNum" column="order_num" jdbcType="VARCHAR"/>
+        <result property="source" column="source" jdbcType="OTHER"/>
+    </resultMap>
+    <!-- gps_info列名 -->
+    <sql id="baseColumn">
+        id,
+        mobile,
+        car_num,
+        addr,
+        x,
+        y,
+        g_x,
+        g_y,
+        s_x,
+        s_y,
+        create_time,
+        city,
+        car_id,
+        order_num,
+        source
+    </sql>
+    <!-- 查询单个 -->
+    <select id="queryById" parameterType="integer" resultMap="GpsInfoMap">
+        select
+        <include refid="baseColumn"></include>
+        from zt3000.gps_info
+        where id = #{id}
+    </select>
+</mapper>

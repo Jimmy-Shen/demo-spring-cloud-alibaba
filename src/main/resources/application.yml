@@ -1,0 +1,11 @@
+seata:
+  enabled: true # 1.0新特性，需要依赖seata-spring-boot-starter,默认为true
+  registry:
+    type: nacos
+    nacos:
+      serverAddr: ${spring.cloud.nacos.discovery.server-addr}
+      namespace: ${spring.profiles.active}
+  client:
+    support:
+      spring:
+        datasource-autoproxy: false

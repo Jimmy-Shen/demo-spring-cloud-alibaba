@@ -1,0 +1,25 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /demo
+spring:
+  application:
+    name: demo-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: nacos-cs.default.svc.cluster.local:8848
+        namespace: ${spring.profiles.active}
+        group: ${spring.profiles.active}-group
+        heart-beat-interval: 20000
+      config:
+        enabled: true
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        group: bmp
+        namespace: ${spring.profiles.active}
+        file-extension: properties
+    alibaba:
+      seata:
+        tx-service-group: demo-service-group
+  profiles:
+    active: dev

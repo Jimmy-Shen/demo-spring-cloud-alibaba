@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+       http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="${spring.application.name}"/>
+
+	<!-- 使用zookeeper注册中心暴露服务地址 -->                
+ 	<dubbo:registry address="${dubbo.registry.address}" protocol="zookeeper" />
+
+    <!-- bussiness的provider服务-->
+    <!-- @author chenjin @date 2019-12-06 @ref FINANCIALSYS-15 -S -->
+    <dubbo:reference id="capitalService" interface="com.zt3000.capital.service.CapitalService" check="false" version="*"/>
+
+    <dubbo:consumer timeout="${dubbo.consumer.timeout}" />
+</beans>
