@@ -37,7 +37,7 @@
 
         <dubbo.version>2.7.3</dubbo.version>
         <curator.version>4.2.0</curator.version>
-        <zookeeper.version>3.4.5</zookeeper.version>
+        <zookeeper.version>3.4.14</zookeeper.version>
 
         <!-- dubbo api模块  -->
         <business-api.version>1.0.4-SNAPSHOT</business-api.version>
