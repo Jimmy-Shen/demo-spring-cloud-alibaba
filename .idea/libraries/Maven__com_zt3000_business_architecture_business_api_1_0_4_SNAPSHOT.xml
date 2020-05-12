@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.zt3000.business:architecture-business-api:1.0.4-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/zt3000/business/architecture-business-api/1.0.4-SNAPSHOT/architecture-business-api-1.0.4-20200326.031913-7.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/zt3000/business/architecture-business-api/1.0.4-SNAPSHOT/architecture-business-api-1.0.4-20200326.031913-7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/zt3000/business/architecture-business-api/1.0.4-SNAPSHOT/architecture-business-api-1.0.4-20200326.031913-7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

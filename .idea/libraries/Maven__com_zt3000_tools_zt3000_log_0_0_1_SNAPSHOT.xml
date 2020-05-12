@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.zt3000.tools:zt3000-log:0.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/zt3000/tools/zt3000-log/0.0.1-SNAPSHOT/zt3000-log-0.0.1-20200417.081107-4.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/zt3000/tools/zt3000-log/0.0.1-SNAPSHOT/zt3000-log-0.0.1-20200417.081107-4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/zt3000/tools/zt3000-log/0.0.1-SNAPSHOT/zt3000-log-0.0.1-20200417.081107-4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
