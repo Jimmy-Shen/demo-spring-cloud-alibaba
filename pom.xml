@@ -31,7 +31,7 @@
 
         <zt3000-log.version>0.0.1-SNAPSHOT</zt3000-log.version>
 
-        <swagger2.version>2.9.2</swagger2.version>
+        <swagger2.version>2.10.0</swagger2.version>
         <swagger-annotations.version>1.5.22</swagger-annotations.version>
         <knife4j.version>2.0.2</knife4j.version>
 
